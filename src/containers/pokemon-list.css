@@ -1,0 +1,52 @@
+.display-card{
+    height:700;
+    width:300px;
+    text-align: center;
+    border:1px solid black;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    grid-gap:1rem;
+}
+
+.box{
+    height:200;
+    width: 225px;
+    text-align: center;
+    border: 1px solid ;
+    color:grey;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* .dialog{
+    height:300;    
+    width:250px;
+  
+} */
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width:425px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:665px){
+    .grid{
+        grid-template-columns: repeat(3,fr);
+    }
+}
+
+@media screen and (max-width:900px){
+    .grid{
+        grid-template-columns: repeat(4,fr)
+    }
+}
