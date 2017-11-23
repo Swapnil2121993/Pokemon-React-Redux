@@ -67,19 +67,19 @@ class PokemonList extends Component {
                             <li><img src={selectedPokemon.images} alt=" "/></li>
                             <li>Weight:{selectedPokemon.weight}</li>
                             <li>Ability:{selectedPokemon.ability}</li>
-							<button className="btn btn-primary"onClick={this.handleClick}>Show All </button>
+			    <button className="btn btn-primary"onClick={this.handleClick}>Show All </button>
                         </div>
-						// to display list of pokemons
-			        ) : pokemonDetails.map((p,i) => {
+				// to display list of pokemons
+			    ) : pokemonDetails.map((p,i) => {
                         return(
                             <div className="box" key={i} onClick={(e) => this.show(e, p)}>
                                 <Infinite containerHeight={200} elementHeight={40} useWindowAsScrollContainer>
                                     <li>Name:{p.name}</li>
                                     <li><img src={p.images} alt=" "/></li>
                                 </Infinite>
-                            </div> 
-		                );
-		            })}
+                             </div> 
+		              );
+		           })}
                     </div>
                 }
             </div>
