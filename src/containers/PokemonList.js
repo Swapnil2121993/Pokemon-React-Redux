@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import Infinite from 'react-infinite';
-import {Modal} from 'react-bootstrap';
 import {fetchList,fetchDetails} from '../actions/index';
 import './pokemon-list.css';
 
